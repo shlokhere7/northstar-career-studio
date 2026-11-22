@@ -4,7 +4,7 @@ A browser-based career planning app for searching selected job openings, compari
 
 ## Run it
 
-Open `index.html` in a modern browser. No build tools or server are required.
+Open `index.html` in a modern browser. On first sign-in, the app opens **My Background** so you can enter and save your own information. No build tools or server are required.
 
 ## Publish with GitHub Pages
 
@@ -16,7 +16,7 @@ Open `index.html` in a modern browser. No build tools or server are required.
 ## Data and limitations
 
 - The job cards are a small set of employer-page snapshots, checked on November 22, 2026. They are not a live job feed; open the source listing to confirm it is still accepting applications.
-- The opening sign-in screen is a local demo gate only. It collects a display name and email in the current browser session; there is no account verification, password, server-side authentication, or per-user data isolation. Do not enter sensitive information.
+- The opening sign-in screen collects a display name and email for a local browser session. The first sign-in opens **My Background** with those two fields filled in; the rest of the profile starts blank. There is no account verification, password, server-side authentication, or per-user data isolation. Do not enter sensitive information.
 - Candidate profiles, assessments, reports, and saved drafts use browser `localStorage`. They are not uploaded to this app's server, but browser storage is not encrypted.
 - Temporary candidate assessments are kept in memory. Saving another candidate requires a permission confirmation in the app.
 - Generated application materials are editable drafts based on entered candidate facts and the selected posting. Review all details before using them.
